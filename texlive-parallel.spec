@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/latex/contrib/parallel
+# catalog-date 2007-01-12 20:52:49 +0100
+# catalog-license lppl
+# catalog-version undef
 Name:		texlive-parallel
 Version:	20070112
 Release:	1
@@ -50,6 +56,7 @@ any two texts.
 %doc %{_texmfdistdir}/source/latex/parallel/parallel.drv
 %doc %{_texmfdistdir}/source/latex/parallel/parallel.dtx
 %doc %{_texmfdistdir}/source/latex/parallel/parallel.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -60,3 +67,5 @@ any two texts.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
