@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-parallel
 Version:	20070112
-Release:	7
+Release:	8
 Summary:	Typeset parallel texts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/parallel
